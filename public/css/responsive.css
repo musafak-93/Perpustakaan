@@ -136,13 +136,18 @@
 
 @media all and (max-width: 377px) {
     header{
-        width: 103%;
+        width: 100%;
     }
     .navbar{
-        width: 103%;
+        width: 100%;
     }
     footer{
-        width: 103%;
+        width: 100%;
     }
-
+    .title-landing{
+        font-size: smaller;
+    }
+    .team{
+        margin-left: 10px;
+    }
 }
