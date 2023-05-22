@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use PDF;
 
 class BukuController extends Controller
 {
@@ -42,5 +43,12 @@ class BukuController extends Controller
         $data_buku = \App\Models\Buku::find($id);
         $data_buku->delete();
         return redirect('buku')->with('Sukses', 'Data berhasil dihapus');
+    }
+
+    public function exportPdf()
+    {
+        $data_buku = \App\Models\Buku::all();
+        $pdf = PDF::loadView('export.bukupdf',['buku' => $data_buku]);
+        return $pdf->download('buku.pdf');
     }
 }

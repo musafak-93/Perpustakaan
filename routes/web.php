@@ -28,3 +28,4 @@ Route::post('/buku/create', [App\Http\Controllers\BukuController::class, 'create
 Route::get('/buku/{id}/edit', [App\Http\Controllers\BukuController::class, 'edit'])->name('buku');
 Route::post('/buku/{id}/update', [App\Http\Controllers\BukuController::class, 'update'])->name('buku');
 Route::get('/buku/delete/{id}', [App\Http\Controllers\BukuController::class, 'delete'])->name('buku');
+Route::get('/buku/exportpdf', [App\Http\Controllers\BukuController::class, 'exportPDF'])->name('buku');
