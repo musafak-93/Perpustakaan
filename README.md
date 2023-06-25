@@ -8,7 +8,7 @@
 </p>
 
 
-# Dasboard Admin Data Pegawai
+# Website Katalog Perpustakaan
 Website katalog perpustakaan merupakan sistem informasi perpusatakaan untuk mengelola katalog buku. Website ini dikembangkan dengan framework Laravel versi 8.
 
 ## Features
